@@ -1,0 +1,39 @@
+
+---
+
+## 📄 `CLAUDE.md` (ROOT)
+
+```md
+# Todo App – Claude Code Instructions (Root)
+
+## Project Context
+This is a monorepo using Spec-Kit Plus for spec-driven development.
+All features must be implemented strictly according to specs.
+
+## Specs Location
+All specs are located in /specs:
+
+- overview.md
+- features/
+- api/
+- database/
+- ui/
+
+## How to Work
+1. Read relevant spec file
+2. Implement exactly what is described
+3. Do not add extra features
+4. Do not write placeholder code
+5. Follow project structure strictly
+
+## Workflow
+- Specs define behavior
+- Claude Code generates implementation
+- Specs are updated if behavior changes
+
+## Stack Overview
+- Frontend: Next.js (App Router)
+- Backend: FastAPI
+- ORM: SQLModel
+- Database: PostgreSQL (Neon)
+- Auth: Better Auth (JWT)

@@ -1,0 +1,43 @@
+# Python
+venv/
+backend/venv/
+__pycache__/
+.env
+
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+.out/
+
+# Backend
+/__pycache__/
+*.pyc
+.env
+.env.*
+
+# Frontend env
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.*.local
+
+# Backend env
+/backend/.env
+/backend/.env.local
+/backend/.env.*.local
+
+# Logs & misc
+*.log
+.DS_Store
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
