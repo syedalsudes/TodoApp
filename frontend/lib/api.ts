@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL!;
 
 async function apiRequest(path: string, method: string, token?: string, body?: any) {
     const headers: any = { "Content-Type": "application/json" };
@@ -38,4 +38,7 @@ export const api = {
         apiRequest(`/api/tasks/${id}/complete`, "PATCH", token),
     updateTask: (token?: string, id?: number, data?: any) =>
         apiRequest(`/api/tasks/${id}`, "PUT", token, data),
+    sendChatMessage: (token?: string, message?: string) =>
+        apiRequest("/api/chat", "POST", token, { message }),
+
 };

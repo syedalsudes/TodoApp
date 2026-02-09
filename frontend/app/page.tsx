@@ -55,12 +55,6 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <footer className="py-10 text-center border-t border-gray-100">
-        <p className="text-sm text-gray-400">
-          Made by <span className="font-semibold text-gray-600">Syed Al-Sudes</span>
-        </p>
-      </footer>
     </main>
   );
 }

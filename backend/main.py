@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlmodel import SQLModel
 from db import engine
 from routes.tasks import router as task_router
+from routes.chat import router as chat_router
+
 
 app = FastAPI(title="Hackathon Todo API")
 
@@ -20,3 +22,5 @@ def on_startup():
     SQLModel.metadata.create_all(engine)
 
 app.include_router(task_router, prefix="/api")
+app.include_router(chat_router, prefix="/api")
+

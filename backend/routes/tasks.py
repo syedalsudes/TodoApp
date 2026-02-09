@@ -8,7 +8,7 @@ from schemas import TaskCreate, TaskUpdate
 router = APIRouter(prefix="/tasks", tags=["Tasks"])
 
 # GET all tasks
-@router.get("")
+@router.get("/")
 def get_tasks(
     session: Session = Depends(db_session),
     user: str = Depends(current_user),
@@ -20,7 +20,7 @@ def get_tasks(
 
 
 # CREATE task
-@router.post("", response_model=Task)
+@router.post("/", response_model=Task)
 def create_task(
     data: TaskCreate,
     session: Session = Depends(db_session),

@@ -25,3 +25,19 @@ Phase II – Full-Stack Web Application
 - Code must be generated via Claude Code
 - Manual coding is not allowed
 - Specs are the single source of truth
+
+
+
+## Phase 3 – AI Agent Integration
+
+Phase 3 introduces an AI-powered Todo Assistant using an Agent-based architecture.
+The agent allows users to manage tasks through natural language commands.
+
+Key highlights:
+- OpenAI Agent SDK–compatible architecture
+- Tool-based execution (no direct DB access by AI)
+- Secure user-scoped task management
+- AI chat integrated with existing Todo system
+
+The agent converts user messages into structured tool calls
+to perform CRUD operations on tasks.

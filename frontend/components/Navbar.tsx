@@ -108,14 +108,16 @@ export default function Navbar() {
                       </Link>
 
                       <Link
-                        href="#"
-                        className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-400 cursor-not-allowed rounded-2xl"
+                        href="/chat"
+                        onClick={() => setIsOpen(false)}
+                        className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-600 rounded-2xl hover:bg-cyan-50 hover:text-cyan-600"
                       >
-                        <div className="p-2 bg-gray-50 rounded-lg text-gray-300">
+                        <div className="p-2 bg-gray-100 rounded-lg">
                           <Sparkles size={18} />
                         </div>
-                        AI Insights <span className="text-[9px] bg-gray-100 px-1.5 py-0.5 rounded text-gray-400">SOON</span>
+                        AI Assistant
                       </Link>
+
 
                       <div className="h-px bg-gray-100 mx-4 my-2" />
 
